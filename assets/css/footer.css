@@ -1,0 +1,103 @@
+.atena-footer{
+    background-color: #242F68;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5% 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo{
+    width:180px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.address{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.brand-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 10px;
+}
+
+.section-title{
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-section p{
+    color: #DADADA;
+}
+
+.footer-section a{
+    text-decoration: none;
+    color: #DADADA;
+}
+
+.footer-section a:hover{
+    color: #616060;
+}
+.contacts-section p{
+    font-size: 1.1rem;
+    margin: 3px 0;
+}
+
+.social-icons{
+ display: flex;
+ gap:15px;
+}
+
+.social-icons img{
+    width:40px;
+    height:40px;
+}
+
+.social-link{
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-link:hover{
+    transform: translateY(-5px);
+    opacity: 0.8;
+}
+
+.footer-bottom{
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column; /* Empilha os elementos */
+        gap: 40px;
+        text-align: left; /* Alinhado à esquerda conforme a sua 2ª imagem */
+    }
+
+    .footer-logo {
+        width: 150px;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,96 @@
+.hero{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -101px;
+    margin-left: 0;
+}
+
+.hero-content{
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+}
+
+
+
+.hero-title{
+    font-size: 3.5em;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #2d2828;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.text-green{
+    color: #10FD8E;
+}
+
+.text-blue{
+    color: #C9F9F9;
+}
+
+.hero-image{
+    flex: 0 0 50%;
+    height: 100vh;
+}
+
+.hero-image img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:600px){
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: -85px; /* Compensa a altura da navbar para a hero começar no topo */
+    }
+    
+    .hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* Camada de contraste (Overlay) */
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Escurece 40% */
+        z-index: 2;
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 3;
+        padding: 0 20px;
+        max-width: 90%;
+    }
+    
+    .hero-title {
+        color: white; /* Texto branco sobre a imagem */
+        font-size: 2.5rem; /* Menor no mobile */
+        line-height: 1.1;
+    }
+}

@@ -1,0 +1,85 @@
+.whatsapp-float {
+    /* POSICIONAMENTO FIXO: Garante que ele flutue ao rolar a página */
+    position: fixed;
+    bottom: 30px; /* Distância do fundo */
+    right: 30px; /* Distância da direita */
+    z-index: 1000; /* Garante que fique acima de tudo */
+    text-decoration: none;
+    
+    /* ESTILO DO BOTÃO */
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.whatsapp-float:hover {
+    background-color: #128C7E; /* Verde mais escuro */
+    transform: scale(1.05); /* Pequeno zoom */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-text {
+    display: flex; /* Permite alinhar ícone e texto */
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilo do Ícone (Font Awesome) */
+.whatsapp-text .fab {
+    font-size: 1.4em; /* Tamanho maior para o ícone */
+    margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-float {
+        bottom: 15px;
+        right: 15px;
+        
+        /* Cria o círculo e centraliza o ícone */
+        width: 55px; 
+        height: 55px; 
+        padding: 0; 
+        border-radius: 50%; 
+        
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        
+        transform: none; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .whatsapp-float .whatsapp-text {
+        /* MUDANÇA ESSENCIAL: Esconde o texto, mas não o ícone */
+        /* Reduz o tamanho do contêiner de texto para que apenas o ícone caiba */
+        width: 100%;
+        height: 100%;
+        
+        /* Garante que o ícone fique centralizado */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        /* O texto "ATENDIMENTO ONLINE" será ocultado com o font-size abaixo */
+        font-size: 0; 
+    }
+
+    /* MUDANÇA ESSENCIAL: Define o tamanho e cor do ícone com unidade ABSOLUTA (px) */
+    .whatsapp-float .whatsapp-text .fab {
+        /* O tamanho agora é fixo (px) e NÃO RELATIVO ao pai */
+        font-size: 28px; /* Tamanho absoluto grande para ser visível */
+        
+        margin: 0; 
+        position: static; 
+        transform: none; 
+        
+        /* Força a cor branca */
+        color: white; 
+    }
+}

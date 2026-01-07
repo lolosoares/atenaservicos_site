@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATENA SERVIÇOS</title>
+    <link rel="stylesheet" href="./assets/css/css-reset.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/hero-section.css">
+    <link rel="stylesheet" href="./assets/css/about-section.css">
+    <link rel="stylesheet" href="./assets/css/services-section.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/form-section.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/whatsap-float.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/images/logo-atena.png" alt="Logo Atena Serviços">
+        </div>
+        <button class="menu-toggle" aria-label="Abrir Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="#form" class="btn-contactar">Contactar</a>
+        </div>
+    </nav>
+    
+    <section class="hero">
+            <div class="hero-image">
+                <img src="./assets/images/hero-background.jpeg">
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Criamos <span class="text-green">Soluções Inteligentes</span>
+                    Para <span class="text-blue">Desafios Complexos</span>
+                </h1>
+            </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <div class="about-conteiner">
+            <h2 class="about-subtitle">Sobre Nós</h2>
+            <div class="about-text">
+                <p>
+                    Constituída no ano de 2022, a <b>Atena Serviços</b> iniciou o seu percurso 
+                    na consultoria informática e serviços de impressão. Hoje, 
+                    posicionamo-nos como um fornecedor premium de tecnologias de informação e materiais 
+                    de escritório (delivery) em Moçambique, fruto de uma auscultação atenta às 
+                    necessidades dos nossos clientes.
+                </p>
+                <p>
+                    Mais do que vender produtos, surgimos para preencher um défice 
+                    de seriedade e eficiência no mercado, garantindo que a sua empresa 
+                    tenha um parceiro devidamente registado e comprometido com resultados 
+                    únicos para cada setor. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="servicos">
+        <div class="services-container">
+            <h2 class="services-main-title">Serviços</h2>
+            <p class="services-intro">Dispomos dos seguintes serviços:</p>
+    
+            <div class="services-grid">
+                <div class="card card-white">
+                    <h3>Construção e Gestão de Websites Corporativos</h3>
+                    <p>Desenvolvemos websites, portais institucionais, plataformas de conteúdo (Blogs, Wikis, dentre outros).</p>
+                </div>
+    
+                <div class="card card-white">
+                    <h3>Registo de domínios, e-mails e alojamento web</h3>
+                    <p>Garanta o nome da sua empresa na internet com o registo de domínios (.com). Oferecemos alojamento web de alta performance.</p>
+                </div>
+    
+                <div class="card card-white">
+                    <h3>Desenvolvimento de Software à Medida</h3>
+                    <p>Transformamos as necessidades do seu negócio em soluções digitais eficientes, otimizando processos e facilitando a gestão.</p>
+                </div>
+    
+                <div class="card card-green">
+                    <h3>Design Gráfico e Identidade Visual</h3>
+                    <p>Dê vida à sua marca com uma imagem profissional. Criamos logótipos exclusivos, cartões de visita e manuais de identidade.</p>
+                </div>
+    
+                <div class="card card-green">
+                    <h3>Formulários Digitais e Coleta de Dados</h3>
+                    <p>Elimine o papel e modernize a recolha de informação com formulários inteligentes e armazenamento seguro de dados.</p>
+                </div>
+    
+                <div class="card card-green">
+                    <h3>Consultoria e Infraestrutura de TI</h3>
+                    <p>Planeamos a base tecnológica da sua empresa, desde a montagem de servidores até à proteção total contra vírus.</p>
+                </div>
+
+                <div class="card-office-horizontal">
+                    <div class="office-content">
+                        <h3>Soluções para Escritório</h3>
+                        <span class="office-subtitle">(Equipamentos e Materiais)</span>
+                        <p>
+                            Fornecimento completo para a sua empresa: desde computadores, servidores e fotocopiadoras 
+                            com assistência técnica, até materiais essenciais como resmas, quadros, marcadores e dentre outros. 
+                            Tudo o que o seu escritório precisa em um só lugar.  
+                        </p>
+                    </div>
+                    <div class="office-image-container">
+                        <img src="./assets/images/escritorio-moderno.jpg" alt="Escritório Moderno">
+                        <div class="image-overlay"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="form">
+        <h2 class="form-title">DIGA-NOS A SUA NECESSIDADE</h2>
+    
+        <form id="contactForm" action="send_email.php" method="POST">
+       <!-- <form id="contactForm" action="mailto:comercial@metalotech.com" method="GET" enctype="text/plain">-->
+                <div class="form-group">   
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input style="font-size: small;" id="nome" name="nome" placeholder="Seu nome ou nome da empresa" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input style="font-size: small;" type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input style="font-size: small;" type="tel" id="telefone" name="telefone" placeholder="(+258) 8X XXXXXXXX" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem / Detalhes da Necessidade</label>
+                <textarea id="mensagem" name="mensagem" rows="3" placeholder="Descreva seu projeto ou necessidade..." required></textarea>
+            </div>
+    
+            <button type="submit" class="submit-button">ENVIAR A MENSAGEM</button>
+            
+            <div id="form-feedback" class="feedback-message" style="display: none;"></div>
+    
+        </form>
+    </section>
+
+    <footer class="atena-footer" id="contactos">
+        <div class="footer-container">
+            <div class="footer-section brand-section">
+                <img src="./assets/images/logo-atena.png" alt="Logo Atena Serviços" class="footer-logo">
+                <p class="adress">Matola, Moçambique</p>
+            </div>
+
+            <div class="footer-section contacts-section">
+                <h4 class="section-title">Contactos</h4>
+                <p>Telemóvel:<a href="tel:+258873415050">87 341 5050</a></p>
+                <p>Email:<a href="mailto:info@atena-servicos.co.mz">info@atena-servicos.co.mz</a></p>
+            </div>
+
+            <div class="footer-section social-section">
+                <h4 class="section-title">Social</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-link"><img src="./assets/images/icons/facebook.png" alt="Facebook icon"></a>
+                    <a href="#" class="social-link"><img src="./assets/images/icons/linkedin.png" alt="Linkedin icon"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p><span id="current-year"></span> Atena Serviços - Todos os direitos reservados</p>
+        </div>
+
+    </footer>
+    <a href="https://wa.me/258877414444" target="_blank" class="whatsapp-float" title="Atendimento Online via WhatsApp">
+        <div class="whatsapp-text">
+            <i class="fab fa-whatsapp"></i> Fale Conosco!
+        </div>
+    </a>
+
+    <script>
+        // Atualiza automaticamente o ano do copyright
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="./scripts/amburguer-menu.js"></script>
+</body>
+</html>
