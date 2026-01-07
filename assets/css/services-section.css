@@ -85,7 +85,7 @@
 }
 
 .card-office-horizontal{
-    grid-column: 1/ span 3;
+    grid-column: 1/ -1;
     display: flex;
     width:100%;
     max-width: 1100px;
@@ -96,6 +96,7 @@
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     max-height: 40vh;
+    box-sizing: border-box;
 }
 
 /*Esquerda*/
