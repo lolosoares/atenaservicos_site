@@ -54,7 +54,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: -85px; /* Compensa a altura da navbar para a hero começar no topo */
+        margin-top: -92px; /* Compensa a altura da navbar para a hero começar no topo */
     }
     
     .hero-image {

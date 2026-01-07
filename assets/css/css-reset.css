@@ -3,6 +3,23 @@
     padding: 0;
 }
 
+/* No topo do seu CSS ou no <head> do HTML */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6; /* Melhora muito a leitura nos cards */
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 700; /* Títulos bem marcados */
+    color: #1A234E;   /* Aquele azul escuro que você já está usando */
+}
+
+.nav-links li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 body {
     overflow-x: hidden; /* Previne qualquer scroll horizontal acidental */
  
